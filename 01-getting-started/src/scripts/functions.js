@@ -2,10 +2,12 @@
 const functions = {
     
     size: (num) => {
-        if (num < 10) return "small";
-        if (num < 20) return "medium";
-        if (num = -101) return "extra-large";
-        return "large";
+        if (num < 10 && num >=-1) return "small";
+        else if (num >= 10 && num <= 19) return "medium";
+        else if (num > 19 && num < 101) return "large";
+        else if (num >= 101) return "extra-large";
+
+        
     },
 
     add: (num1, num2) => {

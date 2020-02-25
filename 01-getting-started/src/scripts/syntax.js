@@ -1,7 +1,21 @@
 /*
-define attributes / variables
-number
-string
+define attributes / variables */
+
+//number
+const functions={
+ isNumber:(num) =>{
+    const x = typeof(num);
+        if (x == "number") return true;
+        else return false;
+},
+
+ defineString:(num) =>{
+     const x = typeof(num);
+       return (x);
+ },
+
+};
+/*string
 boolean
 array
 dictionary / objects
@@ -24,3 +38,4 @@ Objects / Dictionaries
 declare object
 lookup key to retrieve value
 */
+export default functions;
