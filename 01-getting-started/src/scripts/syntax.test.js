@@ -61,3 +61,15 @@ test('Does myReturn work?', () => {
 test('Does addFront work?' , () => {
     expect(functions.addFront()).toStrictEqual(["Bob", "Fred", "Peggy", "James"]);
 });
+
+//push array  test
+test('Does addEnd work?' , () => {
+    expect(functions.addEnd()).toStrictEqual(["Granite", "Gneiss", "Schist", "Dolerite", "Andesite"]);
+});
+
+//The test above seems pretty rigid. How do I make it more flexible?
+
+//update values array test
+test('Does arrayUpdate work?' , () => {
+    expect(functions.arrayUpdate(c[1])).toBe(3);
+})

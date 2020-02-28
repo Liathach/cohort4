@@ -75,19 +75,60 @@ addFront:(name) => {
 var x = ["Fred", "Peggy", "James"];
 x.unshift("Bob");
 return x;
+},
+
+//Add to the end
+addEnd:(name) => {
+  var x = ["Granite", "Gneiss", "Schist", "Dolerite"];
+  x.push("Andesite");
+  return x;
+},
+
+//Update values
+arrayUpdate:(num) => {
+  var c = [1,2,3,4,5];
+  c[1] = 3;
+  return c;
+},
+
+//update values
+//loops 
+//for
+myFor:(num) => {
+  for (i = 0; i < 21; i++);
+  text += "Number is: " + i;
+},
+
+
+//for/in - steps through each element in var.
+myForin:(num) => {
+  var txt = "";
+  var meal = {first:"haggis", second:"whisky", third:"oatcakes"}; 
+  var x;
+  for (x in meal) {
+  txt += meal[x] + " ";
+}
+},
+//while
+myWhile:(num) => {
+var text = "";
+var i = 10;
+while (i < 15) {
+  text += "<br>The number is " + i;
+  i++;
+}
+}
+//do while
+myDowhile:(num) => {
+
 }
 
+//forEach (with array and function)
+myForeach:(num) => {
+  
+}
 
-/*add to the front
-add to the end
-update values
-loops 
-for
-for/in
-while
-do while
-forEach (with array and function)
-Objects / Dictionaries
+/*Objects / Dictionaries
 declare object
 lookup key to retrieve value
 */
