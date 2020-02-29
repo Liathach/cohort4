@@ -72,4 +72,22 @@ test('Does addEnd work?' , () => {
 //update values array test
 test('Does arrayUpdate work?' , () => {
     expect(functions.arrayUpdate(c[1])).toBe(3);
+});
+
+test('does myFor work?' , () => {
+    expect(functions.myFor(35)).toBe("Number is: 34");
 })
+
+test('does myForin work?' , () => {
+    expect(functions.myForin().toBe("haggis whisky oatcakes"));
+})
+
+test('does myDowhile work?' , () => {
+    expect(functions.myDowhile(6)).toBe("Just right!");
+})
+
+test('does myForeach work?' , () => {
+    expect(functions.myForeach)
+})
+
+//write test for forEach.

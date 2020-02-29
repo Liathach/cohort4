@@ -2,27 +2,27 @@
 define attributes / variables */
 
 //number
-const functions={
+ const functions={
  isNumber:(num) =>{
-    const x = typeof(num);
+     const x = typeof(num);
         if (x == "number") return true;
-        else return false;
-},
+         else return false;
+ },
 
 //string
  defineString:(num) =>  {
-     const x = typeof(num);
+      const x = typeof(num);
        return (x);
- },
+  },
 
- //boolean
+//boolean
 
  defineBoolean:(num) =>  {
       const x = typeof(num);
-        return (x);
-  },
+         return (x);
+   },
 
-//array
+   //array
   isVehicle:() => {
   var cars = ["BMW", "Volvo", "Ford"];
   var motorbikes = ["Ducatti", "Yahama", "Suzuki"];
@@ -88,25 +88,29 @@ addEnd:(name) => {
 arrayUpdate:(num) => {
   var c = [1,2,3,4,5];
   c[1] = 3;
-  return c;
+  return c[1];
 },
 
 //update values
 //loops 
 //for
 myFor:(num) => {
-  for (i = 0; i < 21; i++);
-  text += "Number is: " + i;
+  let text = "";
+  for (let i = 10; i < num; i++) {
+  text = "Number is: " + i };
+  return text;
 },
 
 
-//for/in - steps through each element in var.
+//for/in - steps through each element in var. Returns three elements.
+
 myForin:(num) => {
   var txt = "";
   var meal = {first:"haggis", second:"whisky", third:"oatcakes"}; 
   var x;
   for (x in meal) {
   txt += meal[x] + " ";
+  return meal;
 }
 },
 //while
@@ -117,16 +121,19 @@ while (i < 15) {
   text += "<br>The number is " + i;
   i++;
 }
-}
+},
+
 //do while
 myDowhile:(num) => {
-
-}
+ if (x > 10) return "Too big!";
+  while (x<10) return "Just right!";
+},
 
 //forEach (with array and function)
-myForeach:(num) => {
-  
-}
+myArray:(sumArray) => {
+  let total = 0;
+  sumArray.forEach((argument)=> {total =+argument}); 
+return total;} 
 
 /*Objects / Dictionaries
 declare object
