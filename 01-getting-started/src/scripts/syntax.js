@@ -24,15 +24,15 @@ define attributes / variables */
 
    //array
   isVehicle:() => {
-  var cars = ["BMW", "Volvo", "Ford"];
-  var motorbikes = ["Ducatti", "Yahama", "Suzuki"];
-  var vehicles = cars.concat(motorbikes);
+  let cars = ["BMW", "Volvo", "Ford"];
+  let motorbikes = ["Ducatti", "Yahama", "Suzuki"];
+  let vehicles = cars.concat(motorbikes);
   return vehicles.length;
   },
 
 //dictionary / objects
   myPlane:(x) => {
-  var plane = {planeType: "Boeing", planeModel: 787, planeColor: "white"};
+  let plane = {planeType: "Boeing", planeModel: 787, planeColor: "white"};
     return plane[x];
   },
 
@@ -42,7 +42,7 @@ define attributes / variables */
   idCheck:(person) => {
     if (person == "Bob") {
       return "Hello Bob!";
-     } else {return "I don't know you,";
+     } else {return "I don't know you";
   }
   },
 
@@ -71,24 +71,22 @@ myReturn:(num) => {
 //arrays
 //Add to the front
 
-addFront:(name) => {
-var x = ["Fred", "Peggy", "James"];
-x.unshift("Bob");
-return x;
+addFront:(name, arr) => {
+arr.unshift(name);
+return arr;
 },
 
 //Add to the end
-addEnd:(name) => {
-  var x = ["Granite", "Gneiss", "Schist", "Dolerite"];
-  x.push("Andesite");
-  return x;
+addEnd:(name, arr) => {
+  arr.push(name);
+  return arr;
 },
 
 //Update values
-arrayUpdate:(num) => {
-  var c = [1,2,3,4,5];
-  c[1] = 3;
-  return c[1];
+arrayUpdate:(position, value) => {
+    let c = [1,2,3,4,5];
+    c[position] = value;
+  return c;
 },
 
 //update values
@@ -104,40 +102,53 @@ myFor:(num) => {
 
 //for/in - steps through each element in var. Returns three elements.
 
-myForin:(num) => {
-  var txt = "";
-  var meal = {first:"haggis", second:"whisky", third:"oatcakes"}; 
-  var x;
-  for (x in meal) {
-  txt += meal[x] + " ";
-  return meal;
-}
+myForin:(object) => {
+  let string = "";
+  let x=0;
+  for (x in object) {
+    string += object[x] + " ";
+  }
+    console.log(string);
+    return string;
+  
+ 
 },
+
 //while
 myWhile:(num) => {
-var text = "";
-var i = 10;
-while (i < 15) {
-  text += "<br>The number is " + i;
+let sum = 0;
+let i = 0;
+while (i < num) {
+sum = sum +i;
   i++;
 }
+return sum;
 },
 
 //do while
-myDowhile:(num) => {
+myDowhile:(x) => {
  if (x > 10) return "Too big!";
   while (x<10) return "Just right!";
 },
 
 //forEach (with array and function)
-myArray:(sumArray) => {
-  let total = 0;
-  sumArray.forEach((argument)=> {total =+argument}); 
-return total;} 
+sampleforEach:(number_arrays) =>{
+let sum=0;
+number_arrays.forEach(myfunction);
 
-/*Objects / Dictionaries
-declare object
-lookup key to retrieve value
-*/
-}
+function myfunction(item) {
+  
+   sum+=item;
+ 
+}; return (sum);
+},
+
+// /*Objects / Dictionaries
+// declare object
+myDog:(key, object) => {
+  console.log(object[key]);
+  return (object[key]);
+  },
+
+ }
 export default functions;
