@@ -18,11 +18,25 @@ const functions = {
         return num1 - num2;
     },
 
+    multiply: (num1, num2) => {
+        return num1 * num2;
+    },
+
+    divide: (num1, num2) => {
+        return num1 / num2;
+    },
+    
     isEven: (num1) => {
         var x = num1 % 2;
         if (x = 0);
             return true;
     },
+
+    onButtonClicked:() => {
+        let num1 = document.getElementById("myInput1").value;
+        let num2 = document.getElementById("myInput2").value;
+        let oper = document.getElementById()
+    }
 };
 
 export default functions;

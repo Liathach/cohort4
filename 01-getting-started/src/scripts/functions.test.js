@@ -10,11 +10,26 @@ test('Check the sizes', () => {
     expect(functions.size(101)).toBe("extra-large");
 });
 
-test('Does that add function work?', () => {
+test('Does add work?', () => {
     expect(functions.add(1,2)).toBe(3);
     expect(functions.add(101,202)).toBe(303);
 });
 
+test('Does subtract work?' , () => {
+    expect(functions.subtract(10,5)).toBe(5);
+    expect(functions.subtract(20,10)).toBe(10);
+})
+
+test('Does multiply work?' , () => {
+    expect(functions.multiply(2,5)).toBe(10);
+    expect(functions.multiply(10,3)).toBe(30);
+});
+
+test('Does divide work?' , () => {
+    expect(functions.divide(10,2)).toBe(5);
+    expect(functions.divide(14,2)).toBe(7);
+
+})
 test('Does isEven work?', () => {
     expect(functions.isEven(2)).toBe(true);
     
