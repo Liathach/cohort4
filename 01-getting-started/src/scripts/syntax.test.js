@@ -111,8 +111,53 @@ test('does sampleforEach work?' , () => {
     expect(functions.sampleforEach([7,9])).toBe(16);
 });
 
-// //write test for object
+//write test for object
 test('does myDog work?' , () => {
     expect(functions.myDog("breed", {breed: "labrador", name: "Ben"})).toBe("labrador");
     expect(functions.myDog("name", {breed: "labrador", name: "Ben"})).toBe("Ben");
-})
+});
+
+//test for band_1_tax
+
+test('Does band_1_tax_work?' , () => {
+    expect(functions.band_1_tax(35000)).toBe(5250);
+    expect(functions.band_1_tax(20000)).toBe(3000);
+});
+
+//test for band_2_tax
+
+test('Does band_2_tax_work?' , () => {
+    expect(functions.band_2_tax(50000)).toBe(7580.474999999999);
+    expect(functions.band_2_tax(55000)).toBe(8605.474999999999);
+});
+
+//test for band_3_tax
+
+test('Does band_3_tax_work?' , () => {
+    expect(functions.band_3_tax(100000)).toBe(17991.68);
+    expect(functions.band_3_tax(110000)).toBe(20591.68);
+});
+
+//test for band_4_tax
+
+test('Does band_4_tax_work?' , () => {
+    expect(functions.band_4_tax(160000)).toBe(33877.49);
+    expect(functions.band_4_tax(200000)).toBe(45477.49);
+});
+
+//test for band_5_tax
+
+test('Does band_5_tax_work?' , () => {
+    expect(functions.band_5_tax(220000)).toBe(51502.77);
+    expect(functions.band_5_tax(250000)).toBe(61402.770000000004);
+});
+
+//test for tax calculation
+
+test('Does taxCalc work?' , () => {
+    expect(functions.taxCalc(1)).toBe(0.15);
+    expect(functions.taxCalc(2)).toBe(0.30);
+    expect(functions.taxCalc(250000)).toBe(61402.770000000004);
+    expect(functions.taxCalc(35000)).toBe(5250);
+    expect(functions.taxCalc(100000)).toBe(17991.68);
+});
