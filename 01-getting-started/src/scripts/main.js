@@ -35,3 +35,16 @@ taxMe.addEventListener('click', () => {
     total_tax.textContent = functions.taxCalc(total_income.value);
 });
 
+//Add an event listener for Effective Tax Rate calculation
+effectMe.addEventListener('click', () => {
+    document.getElementById("effectMe").value = (((functions.taxCalc(total_tax))/total_income)*100).toFixed(2);
+});
+
+// effMe.addEventListener('click', () => {
+//     let eff_Tax = 0;
+//     eff_Tax = Number((total_tax / total_income) * 100);
+//     document.getElementById("effective_tax").innerHTML = eff_Tax;
+//     console.log(eff_Tax);
+//     console.log(total_income);
+//     console.log(total_tax);
+// });

@@ -33,4 +33,9 @@ test('Does divide work?' , () => {
 test('Does isEven work?', () => {
     expect(functions.isEven(2)).toBe(true);
     
+})
+
+test('Does effTax work?', () => {
+    expect(functions.effTax(10, 100)).toBe(10);
+    expect(functions.effTax(10, 200)).toBe(5);
 });

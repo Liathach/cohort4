@@ -32,11 +32,11 @@ const functions = {
             return true;
     },
 
-  //   onButtonClicked:() => {
-  //     let num1 = document.getElementById("myInput1").value;
-  //     let num2 = document.getElementById("myInput2").value;
-  //     let oper = document.getElementById()
-  // },
+    onButtonClicked:() => {
+      let num1 = document.getElementById("myInput1").value;
+      let num2 = document.getElementById("myInput2").value;
+      let oper = document.getElementById()
+  },
 
     //Band 1 tax function
 
@@ -98,7 +98,12 @@ const functions = {
                 else if (total_income > 97069) return functions.band_3_tax(total_income);
                     else if (total_income > 48535) return functions.band_2_tax(total_income);
                         else return functions.band_1_tax(total_income);
-    }
+    },
+  
+  //   effectiveTax:(total_tax, total_income) => {
+  //   let eff_Tax = ((total_tax / total_income)*100);
+  //   return eff_Tax;
+  // },
   };
 
 
