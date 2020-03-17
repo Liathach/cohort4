@@ -36,9 +36,9 @@ taxMe.addEventListener('click', () => {
 });
 
 //Add an event listener for Effective Tax Rate calculation
-effectMe.addEventListener('click', () => {
-    document.getElementById("effectMe").value = (((functions.taxCalc(total_tax))/total_income)*100).toFixed(2);
-});
+// effectMe.addEventListener('click', () => {
+//     document.getElementById("effectMe").value = (((functions.taxCalc(total_tax))/total_income)*100).toFixed(2);
+// });
 
 // effMe.addEventListener('click', () => {
 //     let eff_Tax = 0;

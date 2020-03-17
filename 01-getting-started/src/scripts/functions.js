@@ -104,6 +104,12 @@ const functions = {
   //   let eff_Tax = ((total_tax / total_income)*100);
   //   return eff_Tax;
   // },
+
+  //Write a function to add to an array
+
+  arrayAdd: () => {
+    
+  }
   };
 
 
