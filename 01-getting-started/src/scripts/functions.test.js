@@ -36,6 +36,6 @@ test('Does isEven work?', () => {
 })
 
 test('Does effTax work?', () => {
-  expect(functions.effTax(10, 100)).toBe(10)
-  expect(functions.effTax(10, 200)).toBe(5)
+  expect(functions.effectiveTax(10, 100)).toBe(10)
+  expect(functions.effectiveTax(10, 200)).toBe(5)
 })

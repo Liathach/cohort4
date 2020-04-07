@@ -100,16 +100,16 @@ const functions = {
                         else return functions.band_1_tax(total_income);
     },
   
-  //   effectiveTax:(total_tax, total_income) => {
-  //   let eff_Tax = ((total_tax / total_income)*100);
-  //   return eff_Tax;
-  // },
+    effectiveTax:(total_tax, total_income) => {
+    let eff_Tax = ((total_tax / total_income)*100);
+    return eff_Tax;
+  },
 
   //Write a function to add to an array
 
-  arrayAdd: () => {
+  // arrayAdd: () => {
     
-  }
+  // }
   };
 
 
