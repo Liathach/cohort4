@@ -1,0 +1,58 @@
+div {
+    font-family: bahnschrift;
+    padding: 10px;
+    border: solid rgba(43, 20, 148, 0.2); 
+}
+
+.delete {
+    float: right;
+    margin-left: 20px;
+}
+
+/* Card area */
+#idMainDiv {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.clCard {
+    display: block;
+    flex-wrap: wrap;
+    background-color: rgba(115, 177, 248, 0.294);
+    padding: 10px;
+    text-align: center;
+    }
+
+.cardTitles {
+    text-align: center;
+    font-weight: bold;
+    border: none;
+}
+
+#idLeftPanel  {
+    width: 30%;
+    min-width: 220px;
+    padding: 0px;
+    border: none;
+}
+
+#idRightPanel {
+   width: 50%;
+   min-width: 170px;
+   background-color: rgba(115, 177, 248, 0.294);
+}
+
+#idRightPanel > p, H3 {
+    padding: 0px 20px;
+ 
+}
+
+
+/* .clCard {
+    /* Add shadows to create the "card" effect */
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    height: 100px;
+    width: 150px;
+    padding: 10px; */ 
